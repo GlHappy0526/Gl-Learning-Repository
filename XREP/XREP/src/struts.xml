@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <package name="Action" extends="struts-default">
+        <!--管理员登录-->
+        <action name="adminLogin" class="control.userAction" method="execute1">
+            <result name="success">adminManagement.jsp</result>
+            <result name="error">adminManagement.jsp</result>
+        </action>
+        <!--普通用户登录-->
+        <action name="userLogin" class="control.userAction" method="execute2">
+            <result name="success">index1.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--用户管理-->
+        <!--添加用户-->
+        <action name="addUser" class="control.userAction" method="execute3">
+            <result name="success">addUserSuccess.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--删除用户-->
+        <!--查询所有用户account-->
+        <action name="idSelectUserAccount" class="control.userAction" method="execute8">
+            <result name="success">deleteUser.jsp</result>
+        </action>
+        <action name="deleteUser" class="control.userAction" method="exectue6">
+            <result name="success">selectUser.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+        <!--修改用户-->
+        <action name="allUsersAccount" class="control.userAction" method="execute8">
+            <result name="success">updateUsers.jsp</result>
+        </action>
+
+        <action name="acountUpdateUser" class="control.userAction" method="execute7">
+            <result name="success">updateUsers2.jsp</result>
+        </action>
+
+        <action name="updateUser" class="control.userAction" method="execute5">
+            <result name="success">selectUser.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+        <!--查询用户-->
+        <action name="selectUser" class="control.userAction" method="execute9">
+            <result name="success">selectUser.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <action name="setIndex1Parameter" class="control.userAction" method="execute10">
+            <result name="success">addMessage.jsp</result>
+        </action>
+
+
+
+
+        <!--留言管理-->
+        <!--添加留言-->
+        <action name="addMessage" class="control.MessageAction" method="execute1">
+            <result name="success">selectMessages.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--删除留言-->
+        <action name="deleteMessage" class="control.MessageAction" method="exectue2">
+            <result name="success">selectMessages.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--修改留言-->
+        <!--查找所有id-->
+        <action name="SelectMessageID" class="control.MessageAction" method="execute5">
+            <result name="success">updateMessage.jsp</result>
+        </action>
+        <!--按照id查找留言-->
+        <action name="idSelectMessage" class="control.MessageAction" method="execute6">
+            <result name="success">updateMessage2.jsp</result>
+        </action>
+        <!--修改留言-->
+        <action name="updateMessage" class="control.MessageAction" method="execute7">
+            <result name="success">selectMessages.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--查询留言-->
+        <action name="selectMessage" class="control.MessageAction" method="execute4">
+            <result name="success">selectMessages.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+        <!--管理员按照id查找所有留言id-->
+        <action name="idDelMessage" class="control.MessageAction" method="execute5">
+            <result name="success">deleteMessage.jsp</result>
+        </action>
+
+
+        <!--新闻管理-->
+        <!--添加新闻-->
+        <action name="addNews" class="control.NewsAction" method="execute1">
+            <result name="success">selectNews.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--删除新闻-->
+        <action name="idDelNews" class="control.NewsAction" method="execute5">
+            <result name="success">deleteNews.jsp</result>
+        </action>
+
+        <action name="deleteNews" class="control.NewsAction" method="exectue3">
+            <result name="success">selectNews.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--修改新闻-->
+        <action name="allNewsID" class="control.NewsAction" method="execute5">
+            <result name="success">updateNews.jsp</result>
+        </action>
+
+        <action name="nidUpdateNews" class="control.NewsAction" method="execute7">
+            <result name="success">updateNews2.jsp</result>
+        </action>
+
+        <action name="updateNews" class="control.NewsAction" method="execute2">
+            <result name="success">selectNews.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+        <!--查询新闻-->
+        <action name="selectNews" class="control.NewsAction" method="execute4">
+            <result name="success">selectNews.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--产品管理-->
+        <!--添加产品-->
+        <action name="addProducts" class="control.ProductsAction" method="execute1">
+            <result name="success">selectProducts.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+        <!--删除产品-->
+        <action name="idDelProducts" class="control.ProductsAction" method="execute2">
+            <result name="success">deleteProducts.jsp</result>
+        </action>
+
+        <action name="deleteProducts" class="control.ProductsAction" method="exectue6">
+            <result name="success">selectProducts.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+
+
+        <!--修改产品-->
+        <!--所有产品id-->
+        <action name="allProductsID" class="control.ProductsAction" method="execute2">
+            <result name="success">updateProducts.jsp</result>
+        </action>
+
+        <action name="idUpdateProducts" class="control.ProductsAction" method="execute3">
+            <result name="success">updateProducts2.jsp</result>
+        </action>
+
+        <action name="updateProducts" class="control.ProductsAction" method="execute5">
+            <result name="success">selectProducts.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+        <!--查询产品-->
+        <action name="selectProducts" class="control.ProductsAction" method="execute4">
+            <result name="success">selectProducts.jsp</result>
+            <result name="error">defect.jsp</result>
+        </action>
+    </package>
+</struts>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Messages" table="messages">
+        <id name="mid" column="mid" type="integer">
+            <generator class="increment"/>
+        </id>
+        <property name="account" type="java.lang.Integer" column="account"></property>
+        <property name="nickname" type="java.lang.String" column="nickname"></property>
+        <property name="message" type="java.lang.String" column="message"></property>
+        <property name="messagetime" type="java.lang.String" column="messagetime"></property>
+    </class>
+</hibernate-mapping>

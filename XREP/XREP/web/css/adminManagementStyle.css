@@ -1,0 +1,101 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    background-color: #2086ce;
+}
+
+.top{
+    width: 100%;
+    height: 80px;
+    line-height:100px;
+    color: #2086ce;
+    text-align: center;
+    background-color: #fbfbfb;
+    background-image: url("../img/xr_logo2.jpg");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: center;
+}
+.center{
+     width: 100%;
+     height: 90%;
+     border-top:10px solid #a6d9fd;
+ }
+
+.leftCenter{
+    width: 14%;
+    height: 100%;
+    background-color: #a6d9fd;
+    float: left;
+    border-right: 2px solid #a6d9fd;
+}
+
+.leftCenter a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.mainMenuLI{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #2086ce;
+    border-bottom: 2px solid black;
+}
+
+.mainMenuLI:hover{
+    font-size: 16px;
+    border-bottom:2px solid #a6d9fd;
+    background-color: rgba(99,91,87,0.1);
+}
+.menuUL{
+     width: 100%;
+     height: auto;
+     position: absolute;
+     display: none;
+ }
+
+.menuUL a{
+    color: #a6d9fd;
+}
+.menuUL li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid #a6d9fd;
+}
+.menuUL li:hover{
+    border-bottom:2px solid #2086ce;
+}
+.mainMenuLI:hover .menuUL{
+    position: relative;
+    display: block;
+}
+.menuUL li:hover a{
+    color: #2086ce;
+    font-size: 20px;
+}
+
+.rightCenter{
+    width: 85%;
+    height: 100%;
+    float: left;
+}
+.iframe2{
+    width: 100%;
+    height: 100%;
+}

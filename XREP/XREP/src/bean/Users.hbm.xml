@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Users" table="users">
+        <id name="account" column="account" type="java.lang.Integer">
+            <generator class="increment"/>
+        </id>
+        <property name="password" column="password" type="java.lang.String"></property>
+        <property name="nickname" column="nickname" type="java.lang.String"></property>
+        <property name="sex" column="sex" type="java.lang.String"></property>
+        <property name="birthday" column="birthday" type="java.lang.String"></property>
+        <property name="hometown" column="hometown" type="java.lang.String"></property>
+        <property name="email" column="email" type="java.lang.String"></property>
+    </class>
+    <!-- 配置一对多关联关系 -->
+    <!--<set name="students" table="student">-->
+    <!--<key column="gid"></key>-->
+    <!--<one-to-many class="project.student1"/>-->
+    <!--<t>-->
+</hibernate-mapping>

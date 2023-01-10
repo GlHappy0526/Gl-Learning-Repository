@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2086ce;
+    font-size: 15px;
+    color: white;
+}
+.left{
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.center{
+    width: 85%;
+    height: 100%;
+    color: white;
+    font-size: 20px;
+    float: left;
+}
+.top{
+    width: 100%;
+    height: 10%;
+    margin: 10px;
+    text-align: center;
+}
+.middle{
+    width: 100%;
+    height: 90%;
+    margin: 10px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 5%;
+}
+.content{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0,0,0,0.1);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    float: left;
+    word-break: break-all;
+    font-size: 15px;
+    color: lightgray;
+}
+input{
+    width: 300px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid black;
+}
+
